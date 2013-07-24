@@ -1,5 +1,5 @@
 /*global angular*/
-var app = angular.module('smartApplication', [])
+var app = angular.module('ngApp', [])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         "use strict";
 
