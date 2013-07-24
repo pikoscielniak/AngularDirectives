@@ -8,5 +8,10 @@ var app = angular.module('ngApp', [])
                 templateUrl: 'templates/SampleDirective.html',
                 controller: 'SampleDirectiveController'
             });
+        $routeProvider.when('/persons',
+            {
+                templateUrl: 'templates/PersonList.html',
+                controller: 'PersonListController'
+            });
         $routeProvider.otherwise({redirectTo: '/sampleDirective'});
     }]);

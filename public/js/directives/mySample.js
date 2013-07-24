@@ -1,5 +1,5 @@
 /*global app, angular*/
-app.directive('mySample', ['$compile', function ($compile) {
+app.directive('mySample', function ($compile) {
     "use strict";
 
     return {
@@ -9,4 +9,4 @@ app.directive('mySample', ['$compile', function ($compile) {
 
         }
     };
-}]);
+});
