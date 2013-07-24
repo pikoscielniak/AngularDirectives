@@ -1,0 +1,11 @@
+doctype 5
+html(ng-app='smartApplication')
+    head
+        title= title
+        link(rel='stylesheet', href='/style/style.css')
+    body
+        ng-view
+        script(src='/js/libs/angular.js')
+        script(src='/js/app.js')
+        script(src="/js/controllers/SampleDirectiveController.js")
+        script(src="/js/directives/directives.js")
