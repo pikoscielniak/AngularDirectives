@@ -1,3 +1,8 @@
 <div ng-repeat="person in persons">
     <person person="person"/>
 </div>
+<div ng-repeat="person in persons">
+    <upvote up-vote="upVote(person)" down-vote="downVote(person)" count="person.upVoteCount"/>
+</div>
+
+

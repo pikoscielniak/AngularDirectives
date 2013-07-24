@@ -12,10 +12,9 @@ a {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    width: 200px;
-    height: 40px;
     margin: 4px;
     padding: 4px;
+    background-color: #339bb9;
 }
 .personLabel{
     font-weight: bold;

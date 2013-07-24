@@ -2,6 +2,8 @@ doctype 5
 html(ng-app='ngApp')
     head
         title= title
+        link(rel='stylesheet', href='/style/bootstrap.min.css')
+        link(rel='stylesheet', href='/style/bootstrap-responsive.css')
         link(rel='stylesheet', href='/style/style.css')
     body
         div(ng-view)
@@ -11,3 +13,4 @@ html(ng-app='ngApp')
         script(src="/js/controllers/PersonListController.js")
         script(src="/js/directives/mySample.js")
         script(src="/js/directives/person.js")
+        script(src="/js/directives/upvote.js")
