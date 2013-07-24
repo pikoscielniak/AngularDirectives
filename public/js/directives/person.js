@@ -5,6 +5,9 @@ app.directive('person', function ($compile) {
     return {
         restrict: 'E',
         replace: true,
-        templateUrl: '/templates/directives/person.html'
+        templateUrl: '/templates/directives/person.html',
+        scope: {
+            person: "=person"
+        }
     };
 });

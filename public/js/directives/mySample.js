@@ -5,7 +5,7 @@ app.directive('mySample', function ($compile) {
     return {
         restrict: 'E',
         template: "<input type='text' ng-model='sampleData' /> {{ sampleData }}<br />",
-        link: function (scope, element, attrs, controller) {
+        scope: {
 
         }
     };
