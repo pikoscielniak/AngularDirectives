@@ -5,4 +5,13 @@
     <upvote up-vote="upVote(person)" down-vote="downVote(person)" count="person.upVoteCount"/>
 </div>
 
+<br/>
+<div class="row">
+    <label>Data:</label>
+    <input type="text" ng-model="startData" date-keys>
+</div>
 
+<div class="row">
+    URL: <input type="text" ng-model="urlImg">      {{ urlImg }}
+    <image-loader url="{{ urlImg }}"/>
+</div>

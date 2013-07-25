@@ -1,5 +1,5 @@
 /*global app, angular*/
-app.directive('mySample', function ($compile) {
+app.directive('mySample', function () {
     "use strict";
 
     return {
