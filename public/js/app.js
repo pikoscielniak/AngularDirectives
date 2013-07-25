@@ -8,6 +8,13 @@ var app = angular.module('ngApp', [])
                 templateUrl: 'templates/SampleDirective.html',
                 controller: 'SampleDirectiveController'
             });
+        $routeProvider.when('/directiveControllerSample',
+            {
+                templateUrl: 'templates/directiveControllerSample.html',
+                controller: 'DirectiveControllerSample'
+            });
+
+
         $routeProvider.when('/persons',
             {
                 templateUrl: 'templates/PersonList.html',
