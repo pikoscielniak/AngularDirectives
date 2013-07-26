@@ -14,6 +14,11 @@ var app = angular.module('ngApp', [])
                 controller: 'DirectiveControllerSample'
             });
 
+        $routeProvider.when('/directiveCompileSample',
+            {
+                templateUrl: 'templates/directiveCompileSample.html',
+                controller: 'DirectiveCompileSample'
+            });
 
         $routeProvider.when('/persons',
             {
