@@ -12,6 +12,13 @@
 </div>
 
 <div class="row">
-    URL: <input type="text" ng-model="urlImg">      {{ urlImg }}
+    URL: <input type="text" ng-model="urlImg"> {{ urlImg }}
     <image-loader url="{{ urlImg }}"/>
+</div>
+
+<div ng-repeat="person in persons">
+    <div collapsible title="{{ person.lastName }}">
+        <div>{{ person.firstName }}</div>
+        <div>{{ person.bio }}</div>
+    </div>
 </div>

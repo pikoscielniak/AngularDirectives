@@ -6,12 +6,18 @@
             {
                 firstName: "First Name 1",
                 lastName: "Last Name 1",
-                upVoteCount: 0
+                upVoteCount: 0,
+                bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque impedit libero veritatis ' +
+                    'voluptates. Atque dicta, dignissimos dolorem ducimus est, eveniet fugit id inventore nam odio' +
+                    ' provident qui quia sit. Quidem!'
             },
             {
                 firstName: "First Name 2",
                 lastName: "Last Name 2",
-                upVoteCount: 0
+                upVoteCount: 0,
+                bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque impedit libero veritatis ' +
+                    'voluptates. Atque dicta, dignissimos dolorem ducimus est, eveniet fugit id inventore nam odio' +
+                    ' provident qui quia sit. Quidem!'
             }
         ];
 

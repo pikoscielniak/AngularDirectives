@@ -4,7 +4,7 @@ app.directive('greeting', function () {
 
     return {
         restrict: 'E',
-        priority: 2,
+        transclude:true,
         template: "<button class='btn' ng-click='sayHello()'>Say Hello</button>",
         controller: 'GreetingController'
 //        controller: '@',    <greeting ctrl="GreetingController"/>
@@ -16,8 +16,7 @@ app.directive('finnish', function () {
     "use strict";
 
     return {
-        require: 'greeting',
-        priority: 1,
+        require: '^greeting',
         restrict: 'A',
         link: function (scope, element, attrs, controller) {
             controller.addGreeting('hei');
@@ -29,8 +28,7 @@ app.directive('polish', function () {
     "use strict";
 
     return {
-        require: 'greeting',
-        priority: 2,
+        require: '^greeting',
         restrict: 'A',
         link: function (scope, element, attrs, controller) {
             controller.addGreeting('Cześć');
