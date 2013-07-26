@@ -4,6 +4,7 @@ app.directive('greeting', function () {
 
     return {
         restrict: 'E',
+        priority: 2,
         template: "<button class='btn' ng-click='sayHello()'>Say Hello</button>",
         controller: 'GreetingController'
 //        controller: '@',    <greeting ctrl="GreetingController"/>
@@ -16,6 +17,7 @@ app.directive('finnish', function () {
 
     return {
         require: 'greeting',
+        priority: 1,
         restrict: 'A',
         link: function (scope, element, attrs, controller) {
             controller.addGreeting('hei');
@@ -28,6 +30,7 @@ app.directive('polish', function () {
 
     return {
         require: 'greeting',
+        priority: 2,
         restrict: 'A',
         link: function (scope, element, attrs, controller) {
             controller.addGreeting('Cześć');
