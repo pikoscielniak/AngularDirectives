@@ -8,5 +8,17 @@
   "dependencies": {
     "express": "3.3.4",
     "jade": "*"
+  },
+  "devDependencies": {
+    "karma-chrome-launcher": "0.0.2",
+    "karma-script-launcher": "0.0.2",
+    "karma-firefox-launcher": "0.0.3",
+    "karma-html2js-preprocessor": "0.0.2",
+    "karma-requirejs": "0.0.3",
+    "karma-jasmine": "0.0.3",
+    "karma-coffee-preprocessor": "0.0.3",
+    "karma-phantomjs-launcher": "0.0.2",
+    "karma": "~0.9.7",
+    "karma-ng-html2js-preprocessor": "0.0.3"
   }
 }

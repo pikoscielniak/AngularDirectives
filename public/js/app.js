@@ -1,5 +1,5 @@
 /*global angular*/
-var app = angular.module('ngApp', [])
+var app = angular.module('ngApp', ['ngResource'])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         "use strict";
 

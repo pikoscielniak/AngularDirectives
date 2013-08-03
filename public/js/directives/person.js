@@ -1,13 +1,14 @@
 /*global app, angular*/
-app.directive('person', function ($compile) {
+app.directive('person', function () {
     "use strict";
 
     return {
         restrict: 'E',
         replace: true,
-        templateUrl: '/templates/directives/person.html',
+        templateUrl: 'templates/directives/person.html',
         scope: {
-            person: "=person"
+            person: "=person",
+            showDetails: "&"
         }
     };
 });
