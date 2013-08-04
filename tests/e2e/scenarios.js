@@ -4,14 +4,15 @@
 
 describe('my app', function() {
 
-//    beforeEach(function() {
-//        browser().navigateTo('../../app/index.html');
-//    });
+    beforeEach(function() {
+        browser().navigateTo('/');
+    });
 //
 //
-//    it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-//        expect(browser().location().url()).toBe("/view1");
-//    });
+    it('should automatically redirect to /sampleDirective when location hash/fragment is empty', function() {
+        console.dir(browser);
+        expect(browser().location().path()).toBe("/sampleDirective");
+    });
 //
 //
 //    describe('view1', function() {
