@@ -58,7 +58,7 @@ module.exports = function (config) {
         proxies: {
             '/': 'http://localhost:3000/'
         },
-        logLevel: config.LOG_DEBUG,
+        logLevel: config.LOG_INFO,
         junitReporter: {
             outputFile: 'test_out/unit.xml',
             suite: 'unit'
